@@ -16,11 +16,12 @@ This Turborepo includes the following packages/apps:
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- `docs`: a [Astro](https://astro.build/) app
+- `@af-library/ui-react`: a stub React component library shared by both `web` and `docs` applications
+- `@af-library/ui-vue`: a stub Vue component library shared by both `web` and `docs` applications
+- `@af-library/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `@af-library/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- `@af-library/config-tailwind`: `tailwind.config.ts` used throughout the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
@@ -46,8 +47,20 @@ pnpm build
 To develop all apps and packages, run the following command:
 
 ```
-cd my-turborepo
 pnpm dev
+```
+
+To develop a specific app or package, run the following command:
+
+```
+// react
+pnpm dev --filter=@af-library/react
+
+// vue
+pnpm dev --filter=@af-library/vue
+
+// docs
+pnpm dev --filter=@af-library/docs
 ```
 
 ### Remote Caching
@@ -103,8 +116,8 @@ Ark-ui is maintained by the same team and component do not differ depending on t
 - [ ] radix
 - [ ] radix-vue
 - [ ] ark-ui (vue and react)
-- [✔️] remove docs and web
-- [✔️] remove @repo/ui
+- ✅ remove docs and web
+- ✅ remove @repo/ui
 - [ ] eslint config package
 - [ ] typescript config package
 - [ ] storybook
@@ -119,3 +132,4 @@ Ark-ui is maintained by the same team and component do not differ depending on t
   - [ ] astro (not supported)
   - [ ] react
 - [ ] replace favicons
+- [ ] expample components using composition

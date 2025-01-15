@@ -1,26 +1,19 @@
 <script setup lang="ts">
-import {
-  DialogClose,
-  DialogContent,
-  DialogDescription,
-  DialogOverlay,
-  DialogPortal,
-  DialogRoot,
-  DialogTitle,
-  DialogTrigger,
-} from 'radix-vue';
+import { Dialog } from '@ark-ui/vue';
 </script>
 
 <template>
-  <DialogRoot>
-    <DialogTrigger class="bg-blue-500 text-black p-2 rounded-md">Open Dialog </DialogTrigger>
-    <DialogPortal>
-      <DialogOverlay class="bg-black/50" />
-      <DialogContent class="bg-white text-black p-2 rounded-md shadow-sm">
-        <DialogTitle>Dialog Title</DialogTitle>
-        <DialogDescription>Dialog Description</DialogDescription>
-        <DialogClose class="bg-red-500 text-black p-2 rounded-md"> Close </DialogClose>
-      </DialogContent>
-    </DialogPortal>
-  </DialogRoot>
+  <Dialog.Root>
+    <Dialog.Trigger>Open Dialog</Dialog.Trigger>
+    <Teleport to="body">
+      <Dialog.Backdrop />
+      <Dialog.Positioner>
+        <Dialog.Content>
+          <Dialog.Title>Dialog Title</Dialog.Title>
+          <Dialog.Description>Dialog Description</Dialog.Description>
+          <Dialog.CloseTrigger>Close</Dialog.CloseTrigger>
+        </Dialog.Content>
+      </Dialog.Positioner>
+    </Teleport>
+  </Dialog.Root>
 </template>
