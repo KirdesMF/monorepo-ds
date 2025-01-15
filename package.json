@@ -4,13 +4,16 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
+    "dev:react": "turbo dev --filter=@af-library/react",
+    "dev:vue": "turbo dev --filter=@af-library/vue",
+    "dev:docs": "turbo dev --filter=@af-library/docs",
     "lint": "turbo lint",
+    "type-check": "turbo run type-check",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
     "prettier": "^3.2.5",
-    "turbo": "^2.3.3",
-    "typescript": "5.5.4"
+    "turbo": "^2.3.3"
   },
   "packageManager": "pnpm@9.0.0",
   "engines": {

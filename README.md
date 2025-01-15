@@ -82,3 +82,24 @@ Learn more about the power of Turborepo:
 - [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
 - [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
 - [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+
+## TODO
+
+- [ ] update README.md
+- [ ] add changelog
+- [ ] add commitizen - commitlint - husky
+- [ ] vscode extensions (vue, astro, tailwind)
+- [ ] radix (not really maintained)
+- [ ] radix-vue
+- [ ] ark-ui (vue and react)
+- [ ] remove docs and web
+- [ ] remove @repo/ui
+- [ ] check, rename and update @repo/eslint-config
+- [ ] check, rename and update @repo/typescript-config
+- [ ] storybook
+- [ ] documentation website
+- [ ] publish ui package to npm
+- [ ] react 19
+- [ ] deploy storybook
+- [ ] deploy documentation website
+- [ ] use biome instead of eslint and prettier when available for vue and astro
