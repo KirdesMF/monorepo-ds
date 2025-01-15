@@ -9,10 +9,7 @@ const props = defineProps<Props>();
 </script>
 
 <template>
-  <button
-    :class="['af-bg-pink-500 af-text-white af-p-2 af-rounded-md', props.className]"
-    :type="props.type"
-  >
+  <button :class="['bg-pink-500 text-white p-2 rounded-md', props.className]" :type="props.type">
     {{ props.text }}
   </button>
 </template>

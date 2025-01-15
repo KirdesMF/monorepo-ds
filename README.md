@@ -87,13 +87,16 @@ Learn more about the power of Turborepo:
 
 - [ ] update README.md
 - [ ] add changelog
-- [ ] add commitizen - commitlint - husky
+  - [ ] commitizen
+  - [ ] commitlint
+  - [ ] husky
+  - [ ] [changesets](https://github.com/changesets/changesets)
 - [ ] vscode extensions (vue, astro, tailwind)
 - [ ] radix (not really maintained)
 - [ ] radix-vue
 - [ ] ark-ui (vue and react)
-- [ ] remove docs and web
-- [ ] remove @repo/ui
+- [✔️] remove docs and web
+- [✔️] remove @repo/ui
 - [ ] check, rename and update @repo/eslint-config
 - [ ] check, rename and update @repo/typescript-config
 - [ ] storybook
@@ -102,4 +105,5 @@ Learn more about the power of Turborepo:
 - [ ] react 19
 - [ ] deploy storybook
 - [ ] deploy documentation website
+- [ ] publish packages to npm
 - [ ] use biome instead of eslint and prettier when available for vue and astro

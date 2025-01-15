@@ -3,7 +3,7 @@ import AFButton from '@/components/AFButton.vue';
 </script>
 
 <template>
-  <main class="af-min-h-dvh af-bg-black">
+  <main class="min-h-dvh bg-black">
     <AFButton type="button" text="Click me" />
   </main>
 </template>

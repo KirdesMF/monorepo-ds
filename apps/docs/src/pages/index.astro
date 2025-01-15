@@ -1,13 +1,13 @@
 ---
-import ButtonVue from '../components/ButtonVue.vue';
 import Layout from '../layouts/Layout.astro';
 import { AFButton, AFCard } from '@af-library/react';
+import {  AFDialog } from '@af-library/vue';
 ---
 
 <Layout>
 	<main class="af-min-h-dvh af-bg-black">
-		<ButtonVue />
 		<AFButton>Hello</AFButton>
 		<AFCard>Hello</AFCard>
+		<AFDialog client:only="vue" />
 	</main>
 </Layout>

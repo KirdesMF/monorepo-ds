@@ -10,7 +10,7 @@ type Props = {
 
 export function AFButton({ children, ref }: Props) {
   return (
-    <button ref={ref} className="af-bg-pink-500 af-text-white af-p-2 af-rounded-md">
+    <button ref={ref} className="bg-pink-500 text-white p-2 rounded-md">
       {children}
     </button>
   );
