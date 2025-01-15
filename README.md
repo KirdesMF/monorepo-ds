@@ -83,6 +83,14 @@ Learn more about the power of Turborepo:
 - [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
 - [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
 
+## Radix - Radix-vue vs Ark-ui
+
+Radix and Radix-vue use different api and do not export the same components.
+For example, Radix does not have a combobox component, but Radix-vue does.
+They are not maintained by the same team.
+
+Ark-ui is maintained by the same team and component do not differ depending on the framework.
+
 ## TODO
 
 - [ ] update README.md
@@ -92,13 +100,13 @@ Learn more about the power of Turborepo:
   - [ ] husky
   - [ ] [changesets](https://github.com/changesets/changesets)
 - [ ] vscode extensions (vue, astro, tailwind)
-- [ ] radix (not really maintained)
+- [ ] radix
 - [ ] radix-vue
 - [ ] ark-ui (vue and react)
 - [✔️] remove docs and web
 - [✔️] remove @repo/ui
-- [ ] check, rename and update @repo/eslint-config
-- [ ] check, rename and update @repo/typescript-config
+- [ ] eslint config package
+- [ ] typescript config package
 - [ ] storybook
 - [ ] documentation website
 - [ ] publish ui package to npm
@@ -106,4 +114,8 @@ Learn more about the power of Turborepo:
 - [ ] deploy storybook
 - [ ] deploy documentation website
 - [ ] publish packages to npm
-- [ ] use biome instead of eslint and prettier when available for vue and astro
+- [ ] use biome instead of eslint and prettier
+  - [ ] vue (not supported)
+  - [ ] astro (not supported)
+  - [ ] react
+- [ ] replace favicons
