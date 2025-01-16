@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import AFButton from '@/components/AFButton.vue';
+import AFButton from '@/lib/AFButton.vue';
+import '@af-library/config-tailwind/index.css';
 </script>
 
 <template>

@@ -1,4 +1,4 @@
-import AFButton from './components/AFButton.vue';
-import { AFDialog } from './components/dialog/af-dialog';
+import AFButton from './lib/AFButton.vue';
+import AFDialog from './lib/AFDialog.vue';
 
 export { AFButton, AFDialog };

@@ -1,4 +1,4 @@
-import { AFButton } from './components/af-button';
-import { AFCard } from './components/af-card';
+import { AFButton } from './lib/af-button';
+import { AFCard } from './lib/af-card';
 
 export { AFButton, AFCard };

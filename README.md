@@ -139,3 +139,4 @@ Ark-ui is maintained by the same team and component do not differ depending on t
 - [ ] use tailwind v4 once it's released
 - [ ] clean all dist scripts
 - [ ] vue-i18n compatibility with ui-vue
+- [ ] plugin css tailwind

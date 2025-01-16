@@ -1,5 +1,5 @@
 {
   "extends": "@af-library/config-typescript/lib.json",
-  "include": ["src/components/**/*.ts", "src/components/**/*.vue", "src/index.ts"],
-  "exclude": ["node_modules", "dist", "src/main.ts", "src/App.vue"]
+  "include": ["src/lib/**/*.ts", "src/index.ts", "src/lib/**/*.vue"],
+  "exclude": ["node_modules", "dist", "src/main.ts", "src/App.vue", "src/components/**"]
 }

@@ -1,5 +1,5 @@
 {
   "extends": "@af-library/config-typescript/lib.json",
-  "include": ["src/components/**/*.ts", "src/components/**/*.tsx", "src/index.ts"],
-  "exclude": ["node_modules", "dist", "src/main.ts", "src/App.tsx"]
+  "include": ["src/lib/**/*.ts", "src/lib/**/*.tsx", "src/index.ts"],
+  "exclude": ["node_modules", "dist", "src/main.ts", "src/App.tsx", "src/components/**"]
 }

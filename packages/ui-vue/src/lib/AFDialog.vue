@@ -9,7 +9,7 @@ import { Dialog } from '@ark-ui/vue';
     </Dialog.Trigger>
 
     <Teleport to="body">
-      <Dialog.Backdrop class="bg-black/50 fixed inset-0 z-af-overlay" />
+      <Dialog.Backdrop class="bg-af-pink-500/45 fixed inset-0 z-af-overlay" />
 
       <Dialog.Positioner class="fixed inset-0 grid place-items-center z-af-dialog">
         <Dialog.Content class="border bg-gray-800 rounded shadow-sm text-gray-100 p-4">

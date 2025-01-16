@@ -1,13 +1,13 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { AFButton, AFCard } from '@af-library/react';
-import { AFDialog } from '@af-library/vue';
+import Layout from "../layouts/Layout.astro";
+import { AFButton, AFCard } from "@af-library/react";
+import { AFDialog } from "@af-library/vue";
 ---
 
 <Layout>
-	<main class="min-h-dvh text-af-grey-700">
-		<AFButton>Hello</AFButton>
-		<AFCard>Hello</AFCard>
-		<AFDialog client:only="vue" />
-	</main>
+  <main class="min-h-dvh text-af-grey-700">
+    <AFButton>Hello</AFButton>
+    <AFCard>Hello</AFCard>
+    <AFDialog client:only="vue" />
+  </main>
 </Layout>
