@@ -1,6 +1,7 @@
 {
   "name": "monorepo-af-ds",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
@@ -18,5 +19,9 @@
   "packageManager": "pnpm@9.0.0",
   "engines": {
     "node": ">=18"
-  }
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
 }

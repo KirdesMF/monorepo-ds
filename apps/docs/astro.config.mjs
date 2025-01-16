@@ -11,18 +11,18 @@ console.log(path.resolve(__dirname, '../../packages/ui-react/src/index.ts'));
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), vue(), tailwind({ configFile: './tailwind.config.ts' })],
-  vite: {
-    resolve: {
-      alias: [
-        {
-          find: '@af-library/react',
-          replacement: path.resolve(__dirname, '../../packages/ui-react/src/index.ts'),
-        },
-        {
-          find: '@af-library/vue',
-          replacement: path.resolve(__dirname, '../../packages/ui-vue/src/index.ts'),
-        },
-      ],
-    },
-  },
+  // vite: {
+  //   resolve: {
+  //     alias: [
+  //       {
+  //         find: '@af-library/react',
+  //         replacement: path.resolve(__dirname, '../../packages/ui-react/src/index.ts'),
+  //       },
+  //       {
+  //         find: '@af-library/vue',
+  //         replacement: path.resolve(__dirname, '../../packages/ui-vue/src/index.ts'),
+  //       },
+  //     ],
+  //   },
+  // },
 });
