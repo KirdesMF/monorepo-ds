@@ -10,7 +10,7 @@ const props = defineProps<Props>();
 
 <template>
   <button
-    :class="['bg-af-pink-100 hover:bg-af-pink-500 text-white p-2 rounded-md', props.className]"
+    :class="['bg-af-pink-100 hover:bg-af-teal-600 text-white p-2 rounded-md', props.className]"
     :type="props.type"
   >
     {{ props.text }}
