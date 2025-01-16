@@ -95,7 +95,7 @@ importers:
 
   packages/config-tailwind:
     devDependencies:
-      '@repo/typescript-config':
+      '@af-library/config-typescript':
         specifier: workspace:*
         version: link:../config-typescript
       tailwindcss:
@@ -119,6 +119,9 @@ importers:
       '@af-library/config-tailwind':
         specifier: workspace:*
         version: link:../config-tailwind
+      '@af-library/config-typescript':
+        specifier: workspace:*
+        version: link:../config-typescript
       '@eslint/js':
         specifier: ^9.17.0
         version: 9.18.0
@@ -177,6 +180,9 @@ importers:
       '@af-library/config-tailwind':
         specifier: workspace:*
         version: link:../config-tailwind
+      '@af-library/config-typescript':
+        specifier: workspace:*
+        version: link:../config-typescript
       '@tsconfig/node22':
         specifier: ^22.0.0
         version: 22.0.0

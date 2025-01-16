@@ -7,7 +7,7 @@
     "./index.css": "./index.css"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
+    "@af-library/config-typescript": "workspace:*",
     "tailwindcss": "^3.4.17"
   }
 }
