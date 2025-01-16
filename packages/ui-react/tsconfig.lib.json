@@ -1,18 +1,5 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "strict": true,
-    "jsx": "preserve",
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "declaration": true,
-    "declarationMap": true,
-    "emitDeclarationOnly": false,
-    "outDir": "dist"
-  },
-  "include": ["src/components/**/*.ts", "src/components/**/*.vue", "src/index.ts"],
-  "exclude": ["node_modules", "dist", "src/main.ts", "src/App.vue"]
+  "extends": "@af-library/config-typescript/lib.json",
+  "include": ["src/components/**/*.ts", "src/components/**/*.tsx", "src/index.ts"],
+  "exclude": ["node_modules", "dist", "src/main.ts", "src/App.tsx"]
 }

@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "@af-library/config-tailwind": "workspace:*",
+    "@af-library/config-typescript": "workspace:*",
     "@tsconfig/node22": "^22.0.0",
     "@types/node": "^22.10.2",
     "@vitejs/plugin-vue": "^5.2.1",

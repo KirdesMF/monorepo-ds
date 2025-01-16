@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "@af-library/config-tailwind": "workspace:*",
+    "@af-library/config-typescript": "workspace:*",
     "@eslint/js": "^9.17.0",
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",

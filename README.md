@@ -106,22 +106,25 @@ Ark-ui is maintained by the same team and component do not differ depending on t
 
 ## TODO
 
-- [ ] update README.md
+- 🚧 update README.md
 - [ ] add changelog
   - [ ] commitizen
   - [ ] commitlint
   - [ ] husky
   - [ ] [changesets](https://github.com/changesets/changesets)
-- [ ] vscode extensions (vue, astro, tailwind)
-- [ ] radix
-- [ ] radix-vue
-- [ ] ark-ui (vue and react)
+- [ ] .vscode
+  - [ ] extensions.json (vue, astro, tailwind)
+  - 🚧 settings.json
+- ❌ radix
+- ❌ radix-vue
+- ✅ ark-ui (vue and react)
 - ✅ remove docs and web
 - ✅ remove @repo/ui
 - [ ] eslint config package
+- [ ] prettier config package ?
 - [ ] typescript config package
 - [ ] storybook
-- [ ] documentation website
+- 🚧 documentation website
 - [ ] publish ui package to npm
 - [ ] react 19
 - [ ] deploy storybook
@@ -133,3 +136,6 @@ Ark-ui is maintained by the same team and component do not differ depending on t
   - [ ] react
 - [ ] replace favicons
 - [ ] expample components using composition
+- [ ] use tailwind v4 once it's released
+- [ ] clean all dist scripts
+- [ ] vue-i18n compatibility with ui-vue
