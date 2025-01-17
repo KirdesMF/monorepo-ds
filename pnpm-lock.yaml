@@ -20,15 +20,6 @@ importers:
 
   apps/docs:
     dependencies:
-      '@af-library/config-tailwind':
-        specifier: workspace:*
-        version: link:../../packages/config-tailwind
-      '@af-library/react':
-        specifier: workspace:*
-        version: link:../../packages/ui-react
-      '@af-library/vue':
-        specifier: workspace:*
-        version: link:../../packages/ui-vue
       '@ark-ui/react':
         specifier: ^4.8.1
         version: 4.8.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -41,6 +32,15 @@ importers:
       '@astrojs/vue':
         specifier: ^5.0.4
         version: 5.0.4(@types/node@22.10.6)(astro@5.1.6(@types/node@22.10.6)(jiti@1.21.7)(rollup@4.30.1)(typescript@5.7.3)(yaml@2.7.0))(jiti@1.21.7)(rollup@4.30.1)(vue@3.5.13(typescript@5.7.3))(yaml@2.7.0)
+      '@kirdes-org/config-tailwind':
+        specifier: workspace:*
+        version: link:../../packages/config-tailwind
+      '@kirdes-org/react':
+        specifier: workspace:*
+        version: link:../../packages/ui-react
+      '@kirdes-org/vue':
+        specifier: workspace:*
+        version: link:../../packages/ui-vue
       '@types/react':
         specifier: ^19.0.7
         version: 19.0.7
@@ -108,32 +108,35 @@ importers:
 
   packages/config-tailwind:
     devDependencies:
-      '@af-library/config-typescript':
+      '@kirdes-org/config-typescript':
         specifier: workspace:*
         version: link:../config-typescript
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.17(ts-node@10.9.2(@types/node@22.10.6)(typescript@5.7.3))
+      tsup:
+        specifier: ^8.3.5
+        version: 8.3.5(@microsoft/api-extractor@7.49.1(@types/node@22.10.6))(jiti@1.21.7)(postcss@8.5.1)(typescript@5.7.3)(yaml@2.7.0)
 
   packages/config-typescript: {}
 
   packages/ui-react:
     devDependencies:
-      '@af-library/config-tailwind':
-        specifier: workspace:*
-        version: link:../config-tailwind
-      '@af-library/config-typescript':
-        specifier: workspace:*
-        version: link:../config-typescript
-      '@af-library/utils':
-        specifier: workspace:*
-        version: link:../utils
       '@ark-ui/react':
         specifier: ^4.8.1
         version: 4.8.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@eslint/js':
         specifier: ^9.17.0
         version: 9.18.0
+      '@kirdes-org/config-tailwind':
+        specifier: workspace:*
+        version: link:../config-tailwind
+      '@kirdes-org/config-typescript':
+        specifier: workspace:*
+        version: link:../config-typescript
+      '@kirdes-org/utils':
+        specifier: workspace:*
+        version: link:../utils
       '@types/react':
         specifier: ^19.0.7
         version: 19.0.7
@@ -185,18 +188,18 @@ importers:
 
   packages/ui-vue:
     devDependencies:
-      '@af-library/config-tailwind':
-        specifier: workspace:*
-        version: link:../config-tailwind
-      '@af-library/config-typescript':
-        specifier: workspace:*
-        version: link:../config-typescript
-      '@af-library/utils':
-        specifier: workspace:*
-        version: link:../utils
       '@ark-ui/vue':
         specifier: ^4.8.0
         version: 4.8.0(vue@3.5.13(typescript@5.6.3))
+      '@kirdes-org/config-tailwind':
+        specifier: workspace:*
+        version: link:../config-tailwind
+      '@kirdes-org/config-typescript':
+        specifier: workspace:*
+        version: link:../config-typescript
+      '@kirdes-org/utils':
+        specifier: workspace:*
+        version: link:../utils
       '@tsconfig/node22':
         specifier: ^22.0.0
         version: 22.0.0

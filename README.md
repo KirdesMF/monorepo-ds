@@ -150,3 +150,4 @@ Ark-ui is maintained by the same team and component do not differ depending on t
 - ✅ clean all dist .turbo node_modules
 - ✅ plugin css tailwind
 - [ ] prettier plugin tailwind
+- [ ] tests

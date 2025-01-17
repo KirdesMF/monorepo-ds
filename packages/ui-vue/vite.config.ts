@@ -24,8 +24,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: '@af-library/vue',
-      fileName: (format) => (format === 'es' ? 'index.js' : 'index.cjs'),
+      name: '@kirdes-org/vue',
+      formats: ['es', 'cjs'],
+      fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
       external: ['vue'],

@@ -33,6 +33,7 @@ export function MySelectItemGroup() {
       { label: 'Solid', value: 'solid' },
     ],
   });
+
   return (
     <AFSelect placeholder="Select a framework" collection={collection}>
       <AFSelectItemGroup label="Frameworks">

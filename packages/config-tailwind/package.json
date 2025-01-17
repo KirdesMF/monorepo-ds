@@ -1,16 +1,29 @@
 {
-  "name": "@af-library/config-tailwind",
-  "version": "0.0.0",
-  "private": true,
+  "name": "@kirdes-org/config-tailwind",
+  "version": "0.0.1",
+  "private": false,
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "exports": {
-    ".": "./tailwind.config.ts",
-    "./plugin": "./theme.plugin.ts"
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.esm.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs.js"
+      }
+    }
   },
   "scripts": {
-    "clean": "rm -rf node_modules"
+    "build": "tsup",
+    "clean": "rm -rf node_modules && rm -rf dist && rm -rf .turbo"
   },
   "devDependencies": {
-    "@af-library/config-typescript": "workspace:*",
-    "tailwindcss": "^3.4.17"
+    "@kirdes-org/config-typescript": "workspace:*",
+    "tailwindcss": "^3.4.17",
+    "tsup": "^8.3.5"
   }
 }

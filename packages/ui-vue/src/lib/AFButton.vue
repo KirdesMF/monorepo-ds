@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { cn } from '@af-library/utils';
+import { cn } from '@kirdes-org/utils';
 import { useAttrs, type ButtonHTMLAttributes } from 'vue';
 
 const attrs = useAttrs();

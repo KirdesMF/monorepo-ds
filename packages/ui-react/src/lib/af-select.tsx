@@ -1,6 +1,6 @@
 'use client';
 
-import { cn } from '@af-library/utils';
+import { cn } from '@kirdes-org/utils';
 import {
   ListCollection,
   Portal,

@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss';
-import createThemePlugin from './theme.plugin';
 
 /**
  * We want each package to be responsible for its own content.
@@ -8,7 +7,6 @@ import createThemePlugin from './theme.plugin';
  * @see https://tailwindcss.com/docs/configuration
  */
 const config: Omit<Config, 'content'> = {
-  plugins: [createThemePlugin()],
   theme: {
     data: {
       override: 'override',

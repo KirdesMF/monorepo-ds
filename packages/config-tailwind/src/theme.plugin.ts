@@ -1,6 +1,6 @@
 import plugin from 'tailwindcss/plugin';
 
-export default function createThemePlugin() {
+export function createThemePlugin() {
   return plugin(
     // Plugin function
     ({ addBase }) => {
@@ -92,6 +92,10 @@ export default function createThemePlugin() {
     // Plugin config
     {
       theme: {
+        data: {
+          override: 'override',
+          mod: 'mod',
+        },
         extend: {
           colors: {
             'af-pink': {

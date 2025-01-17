@@ -1,9 +1,9 @@
 import type { Config } from 'tailwindcss';
-import afLibraryTailwindConfig from '@af-library/config-tailwind';
+import { createThemePlugin } from '@kirdes-org/config-tailwind';
 
-const config: Pick<Config, 'content' | 'presets' | 'prefix' | 'theme'> = {
+const config: Pick<Config, 'content' | 'plugins' | 'prefix' | 'theme'> = {
   content: ['./src/**/*.tsx', 'src/App.tsx'],
-  presets: [afLibraryTailwindConfig],
+  plugins: [createThemePlugin()],
 };
 
 export default config;

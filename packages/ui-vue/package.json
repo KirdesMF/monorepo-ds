@@ -1,24 +1,20 @@
 {
-  "name": "@af-library/vue",
-  "version": "0.0.0",
-  "private": true,
+  "name": "@kirdes-org/vue",
+  "version": "0.0.2",
+  "private": false,
   "type": "module",
-  "main": "dist/index.cjs",
-  "module": "dist/index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "development": {
-        "types": "./src/index.ts",
-        "default": "./src/index.ts"
-      },
       "import": {
         "types": "./dist/index.d.ts",
-        "default": "./dist/index.js"
+        "default": "./dist/index.esm.js"
       },
       "require": {
         "types": "./dist/index.d.ts",
-        "default": "./dist/index.cjs"
+        "default": "./dist/index.cjs.js"
       }
     }
   },
@@ -37,9 +33,9 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@af-library/config-tailwind": "workspace:*",
-    "@af-library/config-typescript": "workspace:*",
-    "@af-library/utils": "workspace:*",
+    "@kirdes-org/config-tailwind": "workspace:*",
+    "@kirdes-org/config-typescript": "workspace:*",
+    "@kirdes-org/utils": "workspace:*",
     "@ark-ui/vue": "^4.8.0",
     "@tsconfig/node22": "^22.0.0",
     "@types/node": "^22.10.2",
@@ -60,5 +56,10 @@
     "vite-plugin-vue-devtools": "^7.6.8",
     "vue": "^3.5.13",
     "vue-tsc": "^2.1.10"
+  },
+  "peerDependenciesMeta": {
+    "@ark-ui/vue": {
+      "optional": false
+    }
   }
 }

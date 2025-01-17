@@ -1,5 +1,23 @@
 {
-  "extends": "@af-library/config-typescript/lib.json",
+  "extends": "@kirdes-org/config-typescript/lib.json",
   "include": ["src/lib/**/*.ts", "src/index.ts", "src/lib/**/*.vue"],
-  "exclude": ["node_modules", "dist", "src/main.ts", "src/App.vue", "src/components/**"]
+  "exclude": ["node_modules", "dist", "src/main.ts", "src/App.vue", "src/components/**"],
+  "compilerOptions": {
+    "target": "ESNext", // Target modern JavaScript
+    "module": "ESNext", // Use ESNext modules for tree-shaking
+    "moduleResolution": "Node", // Module resolution strategy
+    "lib": ["ESNext", "DOM"], // Include necessary libraries
+    "jsx": "preserve", // Preserve JSX (if using JSX in Vue)
+    "strict": true, // Enable strict type-checking
+    "sourceMap": true, // Generate source maps
+    "declaration": true, // Generate declaration files (.d.ts)
+    "declarationMap": true, // Generate source maps for declarations
+    "outDir": "dist", // Output directory
+    "esModuleInterop": true, // Enable interoperability between CommonJS and ES Modules
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in imports
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "resolveJsonModule": true, // Allow importing JSON modules
+    "isolatedModules": true // Ensure each file is treated as a separate module
+  }
 }

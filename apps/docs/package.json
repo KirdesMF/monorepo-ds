@@ -1,7 +1,8 @@
 {
-  "name": "@af-library/docs",
+  "name": "@kirdes-org/docs",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "private": true,
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -10,9 +11,9 @@
     "clean": "rm -rf node_modules && rm -rf dist && rm -rf .turbo && rm -rf .astro"
   },
   "dependencies": {
-    "@af-library/config-tailwind": "workspace:*",
-    "@af-library/react": "workspace:*",
-    "@af-library/vue": "workspace:*",
+    "@kirdes-org/config-tailwind": "workspace:*",
+    "@kirdes-org/react": "workspace:*",
+    "@kirdes-org/vue": "workspace:*",
     "@ark-ui/react": "^4.8.1",
     "@astrojs/react": "^4.1.4",
     "@astrojs/tailwind": "^5.1.4",
