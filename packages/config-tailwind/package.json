@@ -4,7 +4,10 @@
   "private": true,
   "exports": {
     ".": "./tailwind.config.ts",
-    "./index.css": "./index.css"
+    "./plugin": "./theme.plugin.ts"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules"
   },
   "devDependencies": {
     "@af-library/config-typescript": "workspace:*",

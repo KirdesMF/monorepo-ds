@@ -106,37 +106,46 @@ Ark-ui is maintained by the same team and component do not differ depending on t
 
 ## TODO
 
-- 🚧 update README.md
+- [ ] README.md
+  - 🚧 root
+  - [ ] ui-react
+  - [ ] ui-vue
+  - [ ] config-tailwind
+  - [ ] utils
+  - [ ] docs
+  - [ ] config-eslint
+  - [ ] config-typescript
+  - [ ] config-prettier
 - [ ] add changelog
-  - [ ] commitizen
-  - [ ] commitlint
-  - [ ] husky
-  - [ ] [changesets](https://github.com/changesets/changesets)
+  - 🚧 [changesets](https://github.com/changesets/changesets)
 - [ ] .vscode
-  - [ ] extensions.json (vue, astro, tailwind)
+  - ✅ extensions.json (vue, astro, tailwind)
   - 🚧 settings.json
 - ❌ radix
 - ❌ radix-vue
 - ✅ ark-ui (vue and react)
-- ✅ remove docs and web
+- ✅ remove docs and web apps
 - ✅ remove @repo/ui
-- [ ] eslint config package
+- [ ] eslint config package ?
 - [ ] prettier config package ?
 - [ ] typescript config package
 - [ ] storybook
 - 🚧 documentation website
-- [ ] publish ui package to npm
-- [ ] react 19
+- [ ] publish packages to npm
+  - [ ] ui-react
+  - [ ] ui-vue
+  - [ ] config-tailwind
+  - [ ] utils
+- ✅ react 19
 - [ ] deploy storybook
 - [ ] deploy documentation website
-- [ ] publish packages to npm
 - [ ] use biome instead of eslint and prettier
   - [ ] vue (not supported)
   - [ ] astro (not supported)
   - [ ] react
 - [ ] replace favicons
-- [ ] expample components using composition
+- [ ] example components using composition
 - [ ] use tailwind v4 once it's released
-- [ ] clean all dist scripts
 - [ ] vue-i18n compatibility with ui-vue
-- [ ] plugin css tailwind
+- ✅ clean all dist .turbo node_modules
+- ✅ plugin css tailwind

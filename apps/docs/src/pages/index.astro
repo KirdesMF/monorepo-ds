@@ -1,13 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { AFButton, AFCard } from "@af-library/react";
-import { AFDialog } from "@af-library/vue";
+import { Select } from "../components/select.tsx";
 ---
 
 <Layout>
-  <main class="min-h-dvh text-af-grey-700">
-    <AFButton>Hello</AFButton>
-    <AFCard>Hello</AFCard>
-    <AFDialog client:only="vue" />
+  <main class="min-h-dvh text-af-grey-700 grid place-items-center">
+    <Select client:only="react" />
   </main>
 </Layout>

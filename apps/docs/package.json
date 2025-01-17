@@ -6,12 +6,14 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "clean": "rm -rf node_modules && rm -rf dist && rm -rf .turbo && rm -rf .astro"
   },
   "dependencies": {
     "@af-library/config-tailwind": "workspace:*",
     "@af-library/react": "workspace:*",
     "@af-library/vue": "workspace:*",
+    "@ark-ui/react": "^4.8.1",
     "@astrojs/react": "^4.1.4",
     "@astrojs/tailwind": "^5.1.4",
     "@astrojs/vue": "^5.0.4",

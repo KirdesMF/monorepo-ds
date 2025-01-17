@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss';
-import { createThemePlugin } from './theme.plugin';
+import createThemePlugin from './theme.plugin';
 
 /**
  * We want each package to be responsible for its own content.
@@ -9,6 +9,12 @@ import { createThemePlugin } from './theme.plugin';
  */
 const config: Omit<Config, 'content'> = {
   plugins: [createThemePlugin()],
+  theme: {
+    data: {
+      override: 'override',
+      mod: 'mod',
+    },
+  },
 };
 
 export default config;

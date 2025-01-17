@@ -1,18 +1,22 @@
 <script setup lang="ts">
-type Props = {
-  className?: string;
-  text: string;
-  type: 'button' | 'submit' | 'reset';
-};
+import { cn } from '@af-library/utils';
+import { useAttrs, type ButtonHTMLAttributes } from 'vue';
 
-const props = defineProps<Props>();
+const attrs = useAttrs();
+
+interface Props extends /* @vue-ignore */ ButtonHTMLAttributes {
+  variant?: 'primary' | 'secondary';
+}
+defineProps<Props>();
 </script>
 
 <template>
   <button
-    :class="['bg-af-pink-100 hover:bg-af-teal-600 text-white p-2 rounded-md', props.className]"
-    :type="props.type"
+    v-bind="$props"
+    :class="
+      cn('bg-af-pink-100 hover:bg-af-teal-600 text-white p-2 rounded-lg', attrs.class as string)
+    "
   >
-    {{ props.text }}
+    <slot />
   </button>
 </template>

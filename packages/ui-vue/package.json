@@ -29,19 +29,18 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "clean": "rm -rf node_modules && rm -rf dist && rm -rf .turbo"
   },
   "peerDependencies": {
-    "@ark-ui/vue": "^4.8.0",
-    "vue": "^3.5.13"
-  },
-  "dependencies": {
     "@ark-ui/vue": "^4.8.0",
     "vue": "^3.5.13"
   },
   "devDependencies": {
     "@af-library/config-tailwind": "workspace:*",
     "@af-library/config-typescript": "workspace:*",
+    "@af-library/utils": "workspace:*",
+    "@ark-ui/vue": "^4.8.0",
     "@tsconfig/node22": "^22.0.0",
     "@types/node": "^22.10.2",
     "@vitejs/plugin-vue": "^5.2.1",
@@ -59,6 +58,7 @@
     "vite": "^6.0.5",
     "vite-plugin-dts": "^4.5.0",
     "vite-plugin-vue-devtools": "^7.6.8",
+    "vue": "^3.5.13",
     "vue-tsc": "^2.1.10"
   }
 }

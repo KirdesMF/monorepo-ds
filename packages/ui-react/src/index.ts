@@ -1,4 +1,3 @@
-import { AFButton } from './lib/af-button';
-import { AFCard } from './lib/af-card';
-
-export { AFButton, AFCard };
+export * from './lib/af-select';
+export { AFButton } from './lib/af-button';
+export { AFCard } from './lib/af-card';

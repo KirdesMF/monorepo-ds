@@ -27,21 +27,19 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "type-check": "tsc --noEmit",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "clean": "rm -rf node_modules && rm -rf dist && rm -rf .turbo"
   },
   "peerDependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "@ark-ui/react": "^4.8.1"
   },
-  "dependencies": {
-    "@ark-ui/react": "^4.8.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
   "devDependencies": {
     "@af-library/config-tailwind": "workspace:*",
     "@af-library/config-typescript": "workspace:*",
+    "@af-library/utils": "workspace:*",
+    "@ark-ui/react": "^4.8.1",
     "@eslint/js": "^9.17.0",
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
@@ -52,6 +50,8 @@
     "eslint-plugin-react-refresh": "^0.4.16",
     "globals": "^15.14.0",
     "postcss": "^8.5.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "tailwindcss": "^3.4.17",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.18.2",

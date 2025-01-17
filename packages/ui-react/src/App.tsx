@@ -1,3 +1,10 @@
+import { MySelect, MySelectItemGroup } from './components/select-test';
+
 export default function App() {
-  return <main className="af-min-h-dvh af-bg-black"></main>;
+  return (
+    <main className="min-h-dvh grid place-items-center">
+      <MySelect />
+      <MySelectItemGroup />
+    </main>
+  );
 }

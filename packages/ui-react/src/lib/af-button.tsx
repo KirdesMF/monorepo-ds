@@ -1,16 +1,19 @@
 'use client';
 
-import type { ReactNode, Ref } from 'react';
+import { cn } from '@af-library/utils';
+import type { ButtonHTMLAttributes, ReactNode, Ref } from 'react';
 
-type Props = {
-  children: ReactNode;
+interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   ref?: Ref<HTMLButtonElement>;
-  className?: string;
-};
+  children: ReactNode;
+}
 
-export function AFButton({ children, ref }: Props) {
+export function AFButton({ children, className, ...props }: Props) {
   return (
-    <button ref={ref} className="bg-af-pink-500 hover:bg-af-pink-600 text-white p-2 rounded-md">
+    <button
+      {...props}
+      className={cn('bg-af-pink-500 hover:bg-af-pink-600 text-white p-2 rounded-md', className)}
+    >
       {children}
     </button>
   );
