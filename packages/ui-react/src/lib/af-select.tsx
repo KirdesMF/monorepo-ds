@@ -16,9 +16,12 @@ type AFSelectProps<T> = {
   hasClearButton?: boolean;
 };
 
+/**
+ * @todo: extract control and positioner to a separate component
+ */
 export function AFSelect<T>(props: AFSelectProps<T>) {
   return (
-    <Select.Root collection={props.collection} className="w-[min(100%,20rem)]">
+    <Select.Root collection={props.collection} className="w-[min(100%,320px)]">
       <Select.Control className="border rounded-md flex items-center justify-between gap-2 focus-within:outline focus-within:outline-af-grey-700 h-10">
         <Select.Trigger className="flex items-center justify-between gap-2 w-full px-2 py-1 outline-none">
           <div className="flex items-center gap-2">
@@ -39,10 +42,10 @@ export function AFSelect<T>(props: AFSelectProps<T>) {
       </Select.Control>
 
       <Portal>
-        <Select.Positioner className="w-[min(100%,20rem)]">
+        <Select.Positioner className="w-[min(100%,320px)]">
           <Select.Content
             className={cn([
-              'border rounded-md shadow-sm bg-white w-full',
+              'border rounded-md shadow-sm bg-white w-full max-h-[220px] overflow-y-auto',
               'data-[state=open]:animate-slide-in data-[state=closed]:animate-slide-out',
               'data-[state=open]:animate-fade-in data-[state=closed]:animate-fade-out',
             ])}
@@ -63,7 +66,7 @@ export function AFSelectItem(props: AFSelectItemProps) {
   return (
     <Select.Item
       item={props.item}
-      className="px-2 py-1 data-[highlighted]:bg-af-grey-200/20 aria-selected:bg-af-grey-200/20 flex items-center justify-between gap-2 font-light text-sm"
+      className="px-2 py-2 data-[highlighted]:bg-af-grey-200/35 aria-selected:bg-af-grey-200/10 flex items-center justify-between gap-2 font-light text-sm"
     >
       <Select.ItemText>{props.children}</Select.ItemText>
       <Select.ItemIndicator>

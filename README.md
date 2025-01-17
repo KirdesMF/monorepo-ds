@@ -144,8 +144,9 @@ Ark-ui is maintained by the same team and component do not differ depending on t
   - [ ] astro (not supported)
   - [ ] react
 - [ ] replace favicons
-- [ ] example components using composition
+- ✅ example components using composition
 - [ ] use tailwind v4 once it's released
 - [ ] vue-i18n compatibility with ui-vue
 - ✅ clean all dist .turbo node_modules
 - ✅ plugin css tailwind
+- [ ] prettier plugin tailwind
