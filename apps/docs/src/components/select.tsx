@@ -1,4 +1,4 @@
-import { AFSelect, AFSelectItem } from "@af-library/react";
+import { AFSelect, AFSelectItem } from "@kirdes-org/react-ui";
 import { createListCollection } from "@ark-ui/react";
 
 export function Select() {

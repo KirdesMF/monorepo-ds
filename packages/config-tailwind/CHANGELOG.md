@@ -1,4 +1,10 @@
-# @af-library/config-tailwind
+# @kirdes-org/config-tailwind
+
+## 0.0.2
+
+### Patch Changes
+
+- Tailwind v4 and rename packages
 
 ## 0.0.1
 

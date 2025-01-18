@@ -17,11 +17,11 @@ This Turborepo includes the following packages/apps:
 ### Apps and Packages
 
 - `docs`: a [Astro](https://astro.build/) app
-- `@af-library/ui-react`: a stub React component library shared by both `web` and `docs` applications
-- `@af-library/ui-vue`: a stub Vue component library shared by both `web` and `docs` applications
-- `@af-library/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@af-library/typescript-config`: `tsconfig.json`s used throughout the monorepo
-- `@af-library/config-tailwind`: `tailwind.config.ts` used throughout the monorepo
+- `@kirdes-org/ui-react`: a stub React component library shared by both `web` and `docs` applications
+- `@kirdes-org/ui-vue`: a stub Vue component library shared by both `web` and `docs` applications
+- `@kirdes-org/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `@kirdes-org/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- `@kirdes-org/config-tailwind`: `tailwind.config.ts` used throughout the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
@@ -54,13 +54,13 @@ To develop a specific app or package, run the following command:
 
 ```
 // react
-pnpm dev --filter=@af-library/react
+pnpm dev --filter=@kirdes-org/react
 
 // vue
-pnpm dev --filter=@af-library/vue
+pnpm dev --filter=@kirdes-org/vue
 
 // docs
-pnpm dev --filter=@af-library/docs
+pnpm dev --filter=@kirdes-org/docs
 ```
 
 ### Remote Caching

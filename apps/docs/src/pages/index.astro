@@ -1,13 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Select, SelectAvatar } from "../components/select.tsx";
+import { AFInput } from "@kirdes-org/react-ui";
 ---
 
 <Layout>
-  <main class="min-h-dvh text-af-grey-700 grid place-items-center">
+  <main
+    class="min-h-dvh text-af-grey-700 grid place-items-center bg-af-pink-300"
+  >
     <div class="grid gap-12 w-full max-w-[1200px] mx-auto place-items-center">
       <Select client:only="react" />
       <SelectAvatar client:only="react" />
+      <AFInput client:only="react" />
     </div>
   </main>
 </Layout>

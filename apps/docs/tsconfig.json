@@ -7,8 +7,8 @@
     "jsxImportSource": "react",
     "baseUrl": ".",
     "paths": {
-      "@af-library/react": ["../../packages/ui-react/src/index.ts"],
-      "@af-library/vue": ["../../packages/ui-vue/src/index.ts"]
+      "@kirdes-org/react-ui": ["../../packages/react-ui/src/index.ts"],
+      "@kirdes-org/vue-ui": ["../../packages/vue-ui/src/index.ts"]
     }
   }
 }

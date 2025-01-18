@@ -1,7 +1,7 @@
 {
   "name": "@kirdes-org/docs",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -11,23 +11,23 @@
     "clean": "rm -rf node_modules && rm -rf dist && rm -rf .turbo && rm -rf .astro"
   },
   "dependencies": {
-    "@kirdes-org/config-tailwind": "workspace:*",
-    "@kirdes-org/react": "workspace:*",
-    "@kirdes-org/vue": "workspace:*",
     "@ark-ui/react": "^4.8.1",
     "@astrojs/react": "^4.1.4",
-    "@astrojs/tailwind": "^5.1.4",
     "@astrojs/vue": "^5.0.4",
+    "@kirdes-org/config-tailwind": "workspace:*",
+    "@kirdes-org/react-ui": "workspace:*",
+    "@kirdes-org/vue-ui": "workspace:*",
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
     "astro": "^5.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tailwindcss": "^3.4.17",
     "vue": "^3.5.13"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "4.0.0-beta.9",
     "prettier": "^3.4.2",
-    "prettier-plugin-astro": "^0.14.1"
+    "prettier-plugin-astro": "^0.14.1",
+    "tailwindcss": "4.0.0-beta.9"
   }
 }
