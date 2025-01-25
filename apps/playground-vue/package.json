@@ -1,5 +1,5 @@
 {
-  "name": "playground-vue",
+  "name": "@kirdes-org/playground-vue",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -20,7 +20,7 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "4.0.0-beta.9",
+    "@tailwindcss/vite": "4.0.0",
     "@tsconfig/node22": "^22.0.0",
     "@types/node": "^22.10.2",
     "@vitejs/plugin-basic-ssl": "^1.2.0",
@@ -32,7 +32,7 @@
     "eslint-plugin-vue": "^9.30.0",
     "npm-run-all2": "^7.0.2",
     "prettier": "^3.3.3",
-    "tailwindcss": "4.0.0-beta.9",
+    "tailwindcss": "4.0.0",
     "typescript": "~5.6.3",
     "vite": "^6.0.5",
     "vite-plugin-vue-devtools": "^7.6.8",
