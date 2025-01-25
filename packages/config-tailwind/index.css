@@ -1,4 +1,7 @@
 @theme {
+  --font-heading: 'Open Sans', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+
   /* Pink */
   --color-af-pink-100: hsl(331 100% 96%);
   --color-af-pink-200: hsl(331 100% 92%);
@@ -79,9 +82,9 @@
 
   /* Z-index */
   --z-popover: 1000;
-  --z-dialog: 1001;
-  --z-dropdown: 1002;
-  --z-tooltip: 1003;
+  --z-dialog: 2000;
+  --z-dropdown: 3000;
+  --z-tooltip: 4000;
 
   /* Animation */
   --animate-fade-in: fade-in 200ms ease-in-out;

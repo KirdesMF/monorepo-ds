@@ -2,11 +2,11 @@
 
 import { cn } from '@kirdes-org/utils';
 import {
-  ListCollection,
+  type ListCollection,
   Portal,
   Select,
-  SelectItemGroupProps,
-  SelectItemProps,
+  type SelectItemGroupProps,
+  type SelectItemProps,
 } from '@ark-ui/react';
 
 type AFSelectProps<T> = {

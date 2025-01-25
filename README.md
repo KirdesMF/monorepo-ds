@@ -126,16 +126,16 @@ Ark-ui is maintained by the same team and component do not differ depending on t
 - ✅ ark-ui (vue and react)
 - ✅ remove docs and web apps
 - ✅ remove @repo/ui
-- [ ] eslint config package ?
-- [ ] prettier config package ?
-- [ ] typescript config package
-- [ ] storybook
+- [ ] eslint config internal package ?
+- [ ] prettier config internal package ?
+- [ ] typescript config internal package
+- 🚧 storybook
 - 🚧 documentation website
 - [ ] publish packages to npm
-  - [ ] ui-react
-  - [ ] ui-vue
-  - [ ] config-tailwind
-  - [ ] utils
+  - 🚧 ui-react
+  - 🚧 ui-vue
+  - 🚧 config-tailwind
+  - 🚧 utils
 - ✅ react 19
 - [ ] deploy storybook
 - [ ] deploy documentation website
@@ -145,9 +145,12 @@ Ark-ui is maintained by the same team and component do not differ depending on t
   - [ ] react
 - [ ] replace favicons
 - ✅ example components using composition
-- [ ] use tailwind v4 once it's released
-- [ ] vue-i18n compatibility with ui-vue
+- ✅ use tailwind v4 once it's released
+- [ ] vue-i18n compatibility with vue-ui
 - ✅ clean all dist .turbo node_modules
 - ✅ plugin css tailwind
 - [ ] prettier plugin tailwind
 - [ ] tests
+- [ ] cva or tailwind variants + examples
+- [ ] fonts
+- [ ] component lib for emails and pdf ?

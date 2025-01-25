@@ -31,8 +31,11 @@
   },
   "peerDependencies": {
     "@ark-ui/vue": "^4.8.0",
-    "vue": "^3.5.13",
-    "tailwindcss": "4.0.0-beta.9"
+    "tailwindcss": "4.0.0-beta.9",
+    "vue": "^3.5.13"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1"
   },
   "devDependencies": {
     "@ark-ui/vue": "^4.8.0",

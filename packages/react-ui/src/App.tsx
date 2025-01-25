@@ -1,5 +1,5 @@
 import { MySelect, MySelectItemGroup } from './components/select-test';
-import { AFButton } from './lib/af-button';
+import { AFButton } from './lib/button/af-button';
 
 export default function App() {
   return (
