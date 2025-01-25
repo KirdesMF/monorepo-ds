@@ -1,2 +1,4 @@
 @import "tailwindcss";
 @import "@kirdes-org/config-tailwind/index.css";
+@source "../../node_modules/@kirdes-org/react-ui";
+@source "../../node_modules/@kirdes-org/vue-ui";
