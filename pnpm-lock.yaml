@@ -58,7 +58,7 @@ importers:
         version: 3.5.13(typescript@5.7.3)
     devDependencies:
       '@tailwindcss/vite':
-        specifier: 4.0.0
+        specifier: ^4.0.0
         version: 4.0.0(vite@6.0.7(@types/node@22.10.6)(jiti@2.4.2)(lightningcss@1.29.1)(tsx@4.19.2)(yaml@2.7.0))
       prettier:
         specifier: ^3.4.2
@@ -67,7 +67,7 @@ importers:
         specifier: ^0.14.1
         version: 0.14.1
       tailwindcss:
-        specifier: 4.0.0
+        specifier: ^4.0.0
         version: 4.0.0
 
   apps/playground-vue:
@@ -297,7 +297,7 @@ importers:
         specifier: ^8.5.0
         version: 8.5.0(@storybook/test@8.5.0(storybook@8.5.0(prettier@3.4.2)))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(storybook@8.5.0(prettier@3.4.2))(typescript@5.6.3)
       '@tailwindcss/vite':
-        specifier: 4.0.0
+        specifier: ^4.0.0
         version: 4.0.0(vite@6.0.7(@types/node@22.10.6)(jiti@2.4.2)(lightningcss@1.29.1)(tsx@4.19.2)(yaml@2.7.0))
       '@types/react':
         specifier: ^19.0.7
@@ -333,7 +333,7 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
       tailwindcss:
-        specifier: 4.0.0
+        specifier: ^4.0.0
         version: 4.0.0
       typescript:
         specifier: ~5.6.2
@@ -377,7 +377,7 @@ importers:
         specifier: workspace:*
         version: link:../utils
       '@tailwindcss/vite':
-        specifier: 4.0.0
+        specifier: ^4.0.0
         version: 4.0.0(vite@6.0.7(@types/node@22.10.6)(jiti@2.4.2)(lightningcss@1.29.1)(tsx@4.19.2)(yaml@2.7.0))
       '@tsconfig/node22':
         specifier: ^22.0.0
@@ -416,7 +416,7 @@ importers:
         specifier: ^3.3.3
         version: 3.4.2
       tailwindcss:
-        specifier: 4.0.0
+        specifier: ^4.0.0
         version: 4.0.0
       typescript:
         specifier: ~5.6.3
