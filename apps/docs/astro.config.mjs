@@ -13,7 +13,7 @@ console.log(__dirname);
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), vue()],
+  integrations: [react({ include: "**/react/*" }), vue()],
   vite: {
     plugins: [tailwindcss()],
     resolve: {
