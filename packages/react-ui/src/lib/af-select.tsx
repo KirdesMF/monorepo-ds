@@ -68,7 +68,7 @@ export function AFSelectItem(props: AFSelectItemProps) {
       item={props.item}
       className="px-2 py-2 data-[highlighted]:bg-af-grey-200/35 aria-selected:bg-af-grey-200/10 flex items-center justify-between gap-2 font-light text-sm"
     >
-      <Select.ItemText>{props.children}</Select.ItemText>
+      {props.children}
       <Select.ItemIndicator>
         <CheckIcon className="w-4 h-4" />
       </Select.ItemIndicator>

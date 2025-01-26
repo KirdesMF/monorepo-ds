@@ -1,5 +1,6 @@
 import { AFSelect, AFSelectItem } from "@kirdes-org/react-ui";
 import { createListCollection } from "@ark-ui/react";
+import { Select as ArkSelect } from "@ark-ui/react";
 
 export function Select() {
   const collection = createListCollection({
@@ -69,7 +70,7 @@ export function SelectAvatar() {
               alt={item.label}
               className="w-8 h-8 rounded-full"
             />
-            <span>{item.label}</span>
+            <ArkSelect.ItemText>{item.label}</ArkSelect.ItemText>
           </div>
         </AFSelectItem>
       ))}
