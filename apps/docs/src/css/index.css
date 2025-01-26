@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import "tailwindcss" source("../../src");
 @import "@kirdes-org/config-tailwind/index.css";
 
 @source "../../node_modules/@kirdes-org/react-ui";

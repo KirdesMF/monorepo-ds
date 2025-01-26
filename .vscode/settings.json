@@ -4,15 +4,7 @@
       "mode": "auto"
     }
   ],
-  "tailwindCSS.experimental.classRegex": [
-    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
-    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
-  ]
-  // "explorer.fileNesting.enabled": true,
-  // "explorer.fileNesting.patterns": {
-  //   "tsconfig.json": "tsconfig.*.json, env.d.ts, tsconfig.*.tsbuildinfo",
-  //   "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
-  //   "package.json": "package-lock.json, pnpm*, .eslint*, eslint*, .prettier*, prettier*, .editorconfig",
-  //   "tailwind.config.*": "postcss.config.*"
-  // }
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
 }
