@@ -3,6 +3,10 @@
   "version": "0.0.2",
   "private": false,
   "main": "./index.css",
+  "exports": {
+    "./index.css": "./index.css",
+    "./animation.css": "./animation.css"
+  },
   "scripts": {
     "clean": "rm -rf node_modules && rm -rf .turbo",
     "build": "tsx script.ts"

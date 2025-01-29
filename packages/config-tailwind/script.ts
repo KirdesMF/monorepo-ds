@@ -1,90 +1,71 @@
-import fs from 'fs';
-import path from 'path';
+import * as fs from 'fs';
+import * as path from 'path';
 
-/**
- * Leaf token (e.g., { "value": "#FFFFFF" } )
- */
 interface TokenValue {
   value: string;
+  type: string;
+  description?: string;
 }
 
-/**
- * A nested object structure where each key can be:
- * - Another nested TokenObject
- * - A final leaf node (TokenValue)
- */
-type TokenObject = {
-  [key: string]: TokenValue | TokenObject;
-};
-
-/**
- * Type guard to check if the object is a leaf node (TokenValue).
- */
-function hasValue(obj: TokenValue | TokenObject): obj is TokenValue {
-  return typeof obj === 'object' && obj !== null && 'value' in obj;
+interface Tokens {
+  [key: string]: Tokens | TokenValue;
 }
 
-/**
- * Recursively flatten a nested token object into key-value pairs.
- *
- * @param tokens - A nested token structure (TokenObject).
- * @param prefix - A prefix for constructing hierarchical variable names (e.g., `colors-bg-primary`).
- * @returns An object whose keys are flattened, e.g., { 'colors-bg-primary': '#FFF', ... }
- */
-function flattenTokens(tokens: TokenObject, prefix = ''): Record<string, string> {
-  const result: Record<string, string> = {};
+interface TokenSet {
+  global: Tokens;
+  $themes: any[];
+  $metadata: {
+    tokenSetOrder: string[];
+  };
+}
 
-  for (const key in tokens) {
-    const current = tokens[key];
+function processTokens(tokens: Tokens, prefix: string = ''): string {
+  let cssVariables = '';
 
-    // This is a leaf with a `.value` property
-    if (hasValue(current)) {
-      const fullKey = prefix ? `${prefix}-${key}` : key;
-      result[fullKey] = current.value;
-    }
+  for (const [key, value] of Object.entries(tokens)) {
+    const fullKey = prefix ? `${prefix}-${key}` : key;
 
-    // This is a nested object (TokenObject)
-    if (!hasValue(current)) {
-      const newPrefix = prefix ? `${prefix}-${key}` : key;
-      // Recursively merge flattened children
-      Object.assign(result, flattenTokens(current as TokenObject, newPrefix));
+    if (typeof value === 'object' && 'value' in value) {
+      const tokenValue = value as TokenValue;
+
+      // Handle aliases (e.g., "{color.af-pink.500}")
+      let resolvedValue = tokenValue.value;
+      if (resolvedValue.startsWith('{') && resolvedValue.endsWith('}')) {
+        // Extract the reference path (e.g., "color.af-pink.500")
+        const referencePath = resolvedValue.slice(1, -1).split('.');
+        // Convert the reference path to a CSS variable name (e.g., "--color-af-pink-500")
+        resolvedValue = `var(--${referencePath.join('-')})`;
+      }
+
+      // Add the token to the CSS output
+      cssVariables += `  --${fullKey}: ${resolvedValue};\n`;
+    } else if (typeof value === 'object') {
+      // Recursively process nested tokens
+      cssVariables += processTokens(value as Tokens, fullKey);
     }
   }
 
-  return result;
+  return cssVariables;
 }
 
-/**
- * Generate CSS content with custom properties.
- *
- * @param tokens - A record of flattened token keys and their values.
- * @returns A string of CSS custom properties.
- */
-function generateCSS(tokens: Record<string, string>): string {
-  const cssVariables = Object.entries(tokens)
-    .map(([key, value]) => `  --${key}: ${value};`)
-    .join('\n');
-
-  // Example wrapper (could be :root, .theme class, etc.)
-  return `@theme {\n${cssVariables}\n}`;
+function convertJsonToCss(json: TokenSet): string {
+  let cssContent = '@theme {\n';
+  cssContent += processTokens(json.global);
+  cssContent += '}\n';
+  return cssContent;
 }
 
-// Main execution
-// Read the token.json file
-const tokenPath = path.resolve(__dirname, 'token.json');
-const rawJson = fs.readFileSync(tokenPath, 'utf-8');
+function main() {
+  const jsonFilePath = path.join(__dirname, 'token.json');
+  const cssFilePath = path.join(__dirname, 'index.css');
 
-// Parse the JSON; cast to your known structure
-const tokenData = JSON.parse(rawJson) as { global: TokenObject };
+  const jsonContent = fs.readFileSync(jsonFilePath, 'utf-8');
+  const tokenSet: TokenSet = JSON.parse(jsonContent);
 
-// Flatten global tokens
-const flatTokens = flattenTokens(tokenData.global);
+  const cssContent = convertJsonToCss(tokenSet);
 
-// Generate CSS content
-const cssContent = generateCSS(flatTokens);
+  fs.writeFileSync(cssFilePath, cssContent, 'utf-8');
+  console.log('CSS file has been written successfully.');
+}
 
-// Write the generated CSS to tailwind.css
-const outputPath = path.resolve(__dirname, 'tailwind.css');
-fs.writeFileSync(outputPath, cssContent);
-
-console.log('CSS file generated successfully!');
+main();

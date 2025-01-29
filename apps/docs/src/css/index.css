@@ -1,5 +1,6 @@
 @import "tailwindcss" source("../../src");
 @import "@kirdes-org/config-tailwind/index.css";
+@import "@kirdes-org/config-tailwind/animation.css";
 
 @source "../../node_modules/@kirdes-org/react-ui";
 @source "../../node_modules/@kirdes-org/vue-ui";

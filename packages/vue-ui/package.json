@@ -29,16 +29,12 @@
     "format": "prettier --write src/",
     "clean": "rm -rf node_modules && rm -rf dist && rm -rf .turbo"
   },
-  "peerDependencies": {
-    "@ark-ui/vue": "^4.8.0",
-    "tailwindcss": "^4.0.0",
-    "vue": "^3.5.13"
-  },
   "dependencies": {
     "class-variance-authority": "^0.7.1"
   },
   "devDependencies": {
     "@ark-ui/vue": "^4.8.0",
+    "@kirdes-org/config-prettier": "workspace:*",
     "@kirdes-org/config-tailwind": "workspace:*",
     "@kirdes-org/config-typescript": "workspace:*",
     "@kirdes-org/utils": "workspace:*",
@@ -62,6 +58,11 @@
     "vite-plugin-vue-devtools": "^7.6.8",
     "vue": "^3.5.13",
     "vue-tsc": "^2.1.10"
+  },
+  "peerDependencies": {
+    "@ark-ui/vue": "^4.8.0",
+    "tailwindcss": "^4.0.0",
+    "vue": "^3.5.13"
   },
   "peerDependenciesMeta": {
     "@ark-ui/vue": {

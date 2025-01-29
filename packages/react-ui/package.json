@@ -30,18 +30,13 @@
     "preview": "vite preview",
     "clean": "rm -rf node_modules && rm -rf dist && rm -rf .turbo"
   },
-  "peerDependencies": {
-    "@ark-ui/react": "^4.8.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "tailwindcss": "^4.0.0"
-  },
   "dependencies": {
     "class-variance-authority": "^0.7.1"
   },
   "devDependencies": {
     "@ark-ui/react": "^4.8.1",
     "@eslint/js": "^9.17.0",
+    "@kirdes-org/config-prettier": "workspace:*",
     "@kirdes-org/config-tailwind": "workspace:*",
     "@kirdes-org/config-typescript": "workspace:*",
     "@kirdes-org/utils": "workspace:*",
@@ -63,6 +58,12 @@
     "typescript-eslint": "^8.18.2",
     "vite": "^6.0.5",
     "vite-plugin-dts": "^4.5.0"
+  },
+  "peerDependencies": {
+    "@ark-ui/react": "^4.8.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.0"
   },
   "peerDependenciesMeta": {
     "@ark-ui/react": {

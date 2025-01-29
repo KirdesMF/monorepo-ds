@@ -3,7 +3,7 @@
   "include": ["src/lib/**/*.ts", "src/lib/**/*.tsx", "src/index.ts"],
   "exclude": ["node_modules", "dist", "src/main.ts", "src/App.tsx", "src/components/**"],
   "compilerOptions": {
-    "target": "ES5", // Specify ECMAScript target version
+    "target": "ESNext", // Specify ECMAScript target version
     "module": "ESNext", // Use ESNext modules for tree-shaking
     "declaration": true, // Generate declaration files (.d.ts)
     "declarationMap": true, // Generate source maps for declarations

@@ -1,7 +1,3 @@
 @import 'tailwindcss';
 @import '@kirdes-org/config-tailwind/index.css';
-
-@theme {
-  --font-heading: 'Open Sans', sans-serif;
-  --font-body: 'Roboto', sans-serif;
-}
+@import '@kirdes-org/config-tailwind/animation.css';
